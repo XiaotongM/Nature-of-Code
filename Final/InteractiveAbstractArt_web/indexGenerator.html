@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Interactive Abstract Art</title>
+</head>
+
+<body>
+  <p id="screen-log"></p>
+  <div class="section" id="section1">
+    <!-- <h>Abstract Art Generator</h> -->
+    <a href="indexGenerator.html" class="header">Abstract Art Generator</a>
+  </div>
+  <div class="line"></div>
+  <div class="panel panel-default">
+    <div class="col-sm-7">
+      <canvas id="netart_canvas" style="margin:0.2em; padding: 0.3em;"></canvas>
+      <!-- <canvas id="netart_canvas" style="margin:0.2em; padding: 0.3em;width:1280px;height:1280;"></canvas> -->
+    </div>
+    <div class="section" id="sectionGene">
+    <button id="generateBtn">Evolve new generation</button>
+    <span style="width: 10px"></span>
+    <a id="saveBtn" download="myImage.jpg" href="" onclick="download_img(this);">Download</a>
+    </div>
+    <!-- <a href="#" id="saveBtn" onclick="download" download="image.png">Save</a> -->
+</body>
+
+<!-- jQuery -->
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/jquery-ui.1.11.4.js"></script>
+
+<script src="lib/bootstrap.3.2.0.min.js"></script>
+
+<script src="lib/recurrent.js"></script>
+
+<script src="lib/netart.js"></script>
+
+<script language="javascript" type="text/javascript" src="lib/p5.js"></script>
+<!-- uncomment lines below to include extra p5 libraries -->
+<script language="javascript" src="lib/p5.dom.js"></script>
+
+<script src="dna.js"></script>
+
+<script src="population.js"></script>
+
+<script src="rectangle.js"></script>
+
+<script src="face.js"></script>
+
+<script src="sketch.js"></script>
+
+<link rel="stylesheet" type="text/css" href="indexGenerator.css" media="screen" />
+
+</html>
